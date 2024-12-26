@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://s41mbvtfyxwu"]
+
+[ext_resource type="PackedScene" uid="uid://bnindds7yta55" path="res://Scenes/Planet.tscn" id="1_iiosl"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Planet" parent="." instance=ExtResource("1_iiosl")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.1, 0.1)
