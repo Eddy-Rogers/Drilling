@@ -14,6 +14,9 @@ public partial class Planet : Node2D
 		_maxX = (int)GetMeta("MaxX");
 		_maxY = (int)GetMeta("MaxY");
 		
+		// To:Do Create a 2D array of ints to store what kind of tile to generate.
+		// Modify that, store it, and generate it. This should make for easy saving of worlds.
+		
 		_tilemap = GetNode<TileMapLayer>("PlanetTilemap");
 		Generate();
 	}
